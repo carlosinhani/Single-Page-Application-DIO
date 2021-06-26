@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-alunos',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./alunos.component.css']
 })
 export class AlunosComponent implements OnInit {
+
+  @Input() valorInicial: number = 10;
 
   constructor() { }
 
