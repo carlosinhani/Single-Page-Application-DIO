@@ -13,12 +13,11 @@
 </mat-toolbar>
 
 <div>
-  <app-alunos [valorInicial]="valor"></app-alunos>
+  <spa-alunos [valorInicial]="valor"></spa-alunos>
 
   <button (click)="mudarvalor()">Mudar Valor</button>
   <button (click)="reiniciarValor()">Reiniciar Valor</button>
   <button (click)="exibirTabela()">Exibir Tabela</button>
-
 </div>
 
 <table *ngIf="exibeTabela">
@@ -35,4 +34,6 @@
     <td>{{ aluno.curso }}</td>
   </tr>
 </table>
+
+<spa-professores></spa-professores>
 
