@@ -1,3 +1,4 @@
+import { Alunos } from './../model/alunos';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -11,12 +12,12 @@ export class HomeComponent implements OnInit {
   valor: number;
   exibeTabela: boolean = false;
 
-  // listaAlunos: alunos[] = [
-  //   {nome: 'Rodrigo', idade: 38, email: 'carlos.inhani@gmail.com', curso: 'Angular avançado'},
-  //   {nome: 'Priscila', idade: 33, email: 'priscila33@yahoo.com', curso: 'Jornalismo'},
-  //   {nome: 'Mathues', idade: 21, email: 'sera@gmail.com', curso: 'Análise de Sistemas'},
-  //   {nome: 'Gabriel', idade: 23, email: 'ocaramagro@gmail.com', curso: 'Análise de Sistemas'},
-  // ]
+  listaAlunos: Alunos[] = [
+    {nome: 'Rodrigo', idade: 38, email: 'carlos.inhani@gmail.com', curso: 'Angular avançado'},
+    {nome: 'Priscila', idade: 33, email: 'priscila33@yahoo.com', curso: 'Jornalismo'},
+    {nome: 'Matheus', idade: 21, email: 'sera@gmail.com', curso: 'Análise de Sistemas'},
+    {nome: 'Gabriel', idade: 23, email: 'ocaramagro@gmail.com', curso: 'Análise de Sistemas'},
+  ]
 
   constructor() { }
 
